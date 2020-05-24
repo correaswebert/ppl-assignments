@@ -39,7 +39,8 @@ class Eagle(Bird):
 
 
 class Platypus(Amphibian):
-    pass
+    def __str__(self):
+        return f"{self.species}"
 
 
 class Human(Mammal):
@@ -53,7 +54,7 @@ class Human(Mammal):
 
 
 class ElonMusk(Human):
-    """Animal -> Human -> ElonMusk"""
+    """Animal -> Mammal -> Human -> ElonMusk"""
 
     # polymorphism -> base class method is overridden in
     # derived class with the same name
@@ -70,3 +71,5 @@ if __name__ == "__main__":
     print(h)
     e = ElonMusk()
     print(e)
+    p = Platypus()
+    print(p)

@@ -7,7 +7,7 @@ int main()
     // when we compile with the `-fno-stack-protector` flag
     // if we keep `i` relatively small, we may not get segmentation fault
     // as the system stack is not tried to be overwritten
-    for (int i = 0; i < 10000; i++)
+    for (int i = 0; i < 100000000; i++)
         arr[i] = 'a';
 
     return 0;

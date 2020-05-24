@@ -1,5 +1,5 @@
 class Shape(object):
-    """abstract class"""
+    """base class"""
     edges = None                            # public variable
     __secret = "this is a secret value"     # private variable
 

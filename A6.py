@@ -11,8 +11,8 @@ class PaintApp:
 
     x_pos, y_pos = None, None   # positions for pencil and eraser
 
-    x1_line_pt, y1_line_pt = None, None  # position of mouse down
-    x2_line_pt, y2_line_pt = None, None  # position of mouse up
+    x1_pt, y1_pt = None, None   # position of mouse down
+    x2_pt, y2_pt = None, None   # position of mouse up
 
     coords = [None] * 4         # list of [x1, y1, x2, y2]
 
@@ -77,8 +77,8 @@ class PaintApp:
         self.left_btn = "down"
 
         # Set x & y when mouse is clicked
-        self.x1_line_pt = event.x
-        self.y1_line_pt = event.y
+        self.x1_pt = event.x
+        self.y1_pt = event.y
 
     def left_btn_up(self, event=None):
         """mouse up event"""
@@ -90,11 +90,11 @@ class PaintApp:
         self.y_pos = None
 
         # Set x & y when mouse is released
-        self.x2_line_pt = event.x
-        self.y2_line_pt = event.y
+        self.x2_pt = event.x
+        self.y2_pt = event.y
 
-        self.coords = [self.x1_line_pt, self.y1_line_pt,
-                       self.x2_line_pt, self.y2_line_pt]
+        self.coords = [self.x1_pt, self.y1_pt,
+                       self.x2_pt, self.y2_pt]
 
         # use appropriate drawing tool
         if self.drawing_tool == "line":
