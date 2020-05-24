@@ -48,5 +48,6 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "python.pythonPath": "/home/swebert/miniconda3/bin/python"
 }

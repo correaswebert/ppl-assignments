@@ -13,7 +13,7 @@
 
 (print "Please enter a number: ")  
 (finish-output)
-(setq x  (read))
+(setq x (read))
 
 (print "Using recursion...")
 (format t "~D! is ~D" x (factorial_recursion x))
